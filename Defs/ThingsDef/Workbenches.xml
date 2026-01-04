@@ -23,8 +23,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<costList>
-			<Steel>150</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>200</Steel>
 		</costList>
 		<recipes>
 			<li>ButcherCorpseMechanoid</li>

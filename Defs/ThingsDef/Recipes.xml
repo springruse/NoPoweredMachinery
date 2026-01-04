@@ -87,7 +87,7 @@
             <li>Gold</li>
           </thingDefs>
         </filter>
-        <count>4</count> <!-- 2x vanilla 2 -->
+        <count>0.4</count> <!-- 4x vanilla, small material  -->
       </li>
     </ingredients>
     <fixedIngredientFilter>
