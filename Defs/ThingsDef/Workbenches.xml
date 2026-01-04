@@ -3,11 +3,10 @@
 	<!-- ============================================ -->
 	<!-- MANUAL MACHINING TABLE -->
 	<!-- ============================================ -->
-
 	<ThingDef ParentName="BenchBase">
-		<defName>TableMachiningManual</defName>
+		<defName>ManualTableMachining</defName>
 		<label>manual machining table</label>
-		<description>A work station for assembling machinery like guns and ammunition, or breaking down dead mechanoids. This version operates without power but works 50% slower than its powered counterpart.</description>
+		<description>A manual work station for assembling machinery. This one operates with no power but at the cost of reduced efficiency (50%).</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/TableMachining</texPath>
@@ -25,8 +24,10 @@
 		<costList>
 			<Steel>150</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
-			<!-- Slightly cheaper since no power -->
 		</costList>
+		<recipes>
+			<li>ButcherCorpseMechanoid</li>
+		</recipes>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -36,26 +37,20 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-2</Cleanliness>
 			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-			<!-- 50% SLOWER -->
 		</statBases>
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
-		<uiOrder>2521</uiOrder>
-		<!-- Right after regular machining table -->
+		<uiOrder>2520</uiOrder>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-		<recipes>
-			<li>ButcherCorpseMechanoid</li>
-		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
-			<!-- NO POWER COMP - that's the whole point -->
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
@@ -72,6 +67,7 @@
 		<researchPrerequisites>
 			<li>Machining</li>
 		</researchPrerequisites>
+		<designationHotKey>Misc7</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
