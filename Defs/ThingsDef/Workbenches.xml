@@ -12,6 +12,7 @@
 			<texPath>Things/Building/Production/TableMachining</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,1.5)</drawSize>
+			<color>(200,150,100)</color>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
