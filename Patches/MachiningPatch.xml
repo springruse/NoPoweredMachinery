@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[recipeMaker/recipeUsers/li="TableMachining"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>ManualTableMachining</li>
+    </value>
+  </Operation>
 </Patch>

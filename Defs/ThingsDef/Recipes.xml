@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============================================ -->
+  <!-- EXPENSIVE INDUSTRIAL COMPONENT RECIPE -->
+  <!-- ============================================ -->
+  <RecipeDef>
+    <defName>Make_ComponentIndustrial_Expensive</defName>
+    <label>make component(expensive)</label>
+    <description>Make an industrial component using more resources and time.</description>
+    <jobString>Making component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount> <!-- 2x vanilla 5000 -->
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>24</count> <!-- 2x vanilla 12 -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>ManualTableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>Machining</researchPrerequisite> <!-- Unlocked by Machining research -->
+    <displayPriority>1</displayPriority>
+  </RecipeDef>
+
+  <!-- ============================================ -->
+  <!-- EXPENSIVE ADVANCED COMPONENT RECIPE -->
+  <!-- ============================================ -->
+  <RecipeDef>
+    <defName>Make_ComponentSpacer_Expensive</defName>
+    <label>make advanced component (expensive)</label>
+    <description>Make an advanced component using more resources and time.</description>
+    <jobString>Making advanced component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10400</workAmount> <!-- 2x vanilla 5200 -->
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count> <!-- 2x vanilla 1 -->
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count> <!-- 2x vanilla 20 -->
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count> <!-- 2x vanilla 10 -->
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>4</count> <!-- 2x vanilla 2 -->
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>Gold</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentSpacer>1</ComponentSpacer>
+    </products>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>ManualTableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite> <!-- Unlocked by Microelectronics -->
+    <displayPriority>2</displayPriority>
+  </RecipeDef>
+</Defs>
